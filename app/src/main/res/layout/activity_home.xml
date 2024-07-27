@@ -12,7 +12,7 @@
         android:id="@+id/toolBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#000000"
+        android:background="#072333"
         android:gravity="end"
         android:textAlignment="textEnd"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
@@ -30,10 +30,10 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/beforeAge18"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:onClick="beforeAge18"
                 android:padding="10dp"
                 app:cardCornerRadius="20dp">
 
@@ -104,7 +104,7 @@
                     </LinearLayout>
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/btnGetStarted1"
+                        android:id="@+id/btnGetStartedBefore"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -121,10 +121,10 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/afterAge18"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:onClick="afterAge18"
                 android:padding="10dp"
                 app:cardCornerRadius="20dp">
 
@@ -195,7 +195,7 @@
                     </LinearLayout>
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/btnGetStarted2"
+                        android:id="@+id/btnGetStartedAfter"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -212,10 +212,10 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/goToFood"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:onClick="goToFood"
                 android:padding="10dp"
                 app:cardCornerRadius="20dp">
 
