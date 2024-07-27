@@ -12,6 +12,8 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.apply {
+
+            setSupportActionBar(toolBar)
             btnGetStartedBefore.setOnClickListener {
                 beforeAge18()
             }
