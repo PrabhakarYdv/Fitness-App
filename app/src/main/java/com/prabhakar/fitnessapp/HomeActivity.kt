@@ -1,6 +1,7 @@
 package com.prabhakar.fitnessapp
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.prabhakar.fitnessapp.databinding.ActivityHomeBinding
 
@@ -12,4 +13,11 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
     }
+
+    private fun beforeAge18(view: View) {
+
+    }
+
+    private fun afterAge18(view: View) {}
+    private fun goToFood(view: View) {}
 }
