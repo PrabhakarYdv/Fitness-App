@@ -8,6 +8,16 @@
     android:orientation="vertical"
     tools:context=".HomeActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#000000"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Fitness App"
+        app:titleTextColor="#FFFFFF" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,10 +30,10 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                android:onClick="beforeAge18"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
+                android:onClick="beforeAge18"
                 android:padding="10dp"
                 app:cardCornerRadius="20dp">
 
@@ -94,6 +104,7 @@
                     </LinearLayout>
 
                     <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnGetStarted1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -110,10 +121,10 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:onClick="afterAge18"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
+                android:onClick="afterAge18"
                 android:padding="10dp"
                 app:cardCornerRadius="20dp">
 
@@ -184,6 +195,7 @@
                     </LinearLayout>
 
                     <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnGetStarted2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -200,10 +212,10 @@
 
 
             <androidx.cardview.widget.CardView
-                android:onClick="goToFood"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
+                android:onClick="goToFood"
                 android:padding="10dp"
                 app:cardCornerRadius="20dp">
 
@@ -229,6 +241,7 @@
                             android:textColor="#000000"
                             android:textSize="25dp"
                             android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -245,13 +258,13 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:src="@drawable/food"/>
+                        android:src="@drawable/food" />
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_weight="0.5"
                         android:layout_gravity="center"
+                        android:layout_weight="0.5"
                         android:src="@drawable/right_arrow" />
 
                 </LinearLayout>

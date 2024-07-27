@@ -18,6 +18,11 @@ class HomeActivity : AppCompatActivity() {
 
     }
 
-    private fun afterAge18(view: View) {}
-    private fun goToFood(view: View) {}
+    private fun afterAge18(view: View) {
+
+    }
+
+    private fun goToFood(view: View) {
+
+    }
 }
