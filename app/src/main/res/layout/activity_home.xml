@@ -93,7 +93,7 @@
                             android:layout_height="100dp"
                             android:layout_gravity="center"
                             android:layout_weight="1"
-                            android:src="@drawable/exersice_1" />
+                            android:src="@drawable/exercise_1" />
 
                         <ImageView
                             android:layout_width="50dp"
@@ -184,7 +184,7 @@
                             android:layout_height="100dp"
                             android:layout_gravity="center"
                             android:layout_weight="1"
-                            android:src="@drawable/exersice_2" />
+                            android:src="@drawable/exercise_2" />
 
                         <ImageView
                             android:layout_width="50dp"
