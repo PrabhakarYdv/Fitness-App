@@ -20,6 +20,8 @@ class ExerciseActivity : AppCompatActivity() {
         val image = intent.getIntExtra("exerciseImage", 0)
         val duration = intent.getIntExtra("exerciseDuration", R.drawable.exercise_1)
         binding.apply {
+            setSupportActionBar(toolBar)
+
             exerciseName.text = name
             exerciseImage.setImageResource(image)
             timer.text = "0${duration}:00"

@@ -8,7 +8,7 @@ class ExerciseViewHolder(
     private val clickListener: ClickListener
 ) :
     RecyclerView.ViewHolder(binding.root) {
-    fun setData(model: Model) {
+    fun setData(model: ExerciseModel) {
         binding.apply {
             exerciseName.text = model.exerciseName
             duration.text = "0${model.exerciseDuration}:00 MIN"

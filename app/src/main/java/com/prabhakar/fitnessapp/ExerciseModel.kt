@@ -1,6 +1,6 @@
 package com.prabhakar.fitnessapp
 
-data class Model(
+data class ExerciseModel(
     val exerciseName: String,
     val exerciseImage: Int,
     val exerciseDuration:Int

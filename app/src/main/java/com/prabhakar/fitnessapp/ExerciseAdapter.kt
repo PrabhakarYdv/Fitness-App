@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.prabhakar.fitnessapp.databinding.ExerciseLayoutBinding
 
 class ExerciseAdapter(
-    private val exerciseList: MutableList<Model>,
+    private val exerciseList: MutableList<ExerciseModel>,
     private val clickListener: ClickListener
 ) : RecyclerView.Adapter<ExerciseViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExerciseViewHolder {

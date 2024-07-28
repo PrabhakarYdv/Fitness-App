@@ -7,33 +7,34 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.prabhakar.fitnessapp.databinding.ActivityBeforeAgeBinding
 
 class BeforeAgeActivity : AppCompatActivity(), ClickListener {
-    private val exerciseList = mutableListOf<Model>()
+    private val exerciseList = mutableListOf<ExerciseModel>()
     private lateinit var exerciseAdapter: ExerciseAdapter
     private lateinit var binding: ActivityBeforeAgeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityBeforeAgeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setSupportActionBar(binding.toolBar)
         buildList()
         setRecyclerView()
     }
 
     private fun buildList() {
-        exerciseList.add(Model("MOUNTAIN CLIMBER", R.drawable.exercise_1, 1))
-        exerciseList.add(Model("BASIC CRUNCHES", R.drawable.exercise_2, 1))
-        exerciseList.add(Model("BENCH DIPS", R.drawable.exercise_3, 1))
-        exerciseList.add(Model("BICYCLE CLIMBER", R.drawable.exercise_4, 1))
-        exerciseList.add(Model("LEG RAISE", R.drawable.exercise_5, 1))
-        exerciseList.add(Model("ALTERNATIVE HEEL TOUCH", R.drawable.exercise_6, 1))
-        exerciseList.add(Model("LEG UP CRUNCHES", R.drawable.exercise_7, 1))
-        exerciseList.add(Model("SIT UP", R.drawable.exercise_8, 1))
-        exerciseList.add(Model("ALTERNATIVE UPS", R.drawable.exercise_9, 1))
-        exerciseList.add(Model("PLANK ROTATION", R.drawable.exercise_10, 1))
-        exerciseList.add(Model("PLANK WITH LEG LEFT", R.drawable.exercise_11, 1))
-        exerciseList.add(Model("RUSSINA TWIST", R.drawable.exercise_12, 1))
-        exerciseList.add(Model("BRIDGE", R.drawable.exercise_13, 1))
-        exerciseList.add(Model("VERTICAL LEG CRUNCHES", R.drawable.exercise_14, 1))
-        exerciseList.add(Model("WIND MILL", R.drawable.exercise_15, 1))
+        exerciseList.add(ExerciseModel("MOUNTAIN CLIMBER", R.drawable.exercise_1, 1))
+        exerciseList.add(ExerciseModel("BASIC CRUNCHES", R.drawable.exercise_2, 1))
+        exerciseList.add(ExerciseModel("BENCH DIPS", R.drawable.exercise_3, 1))
+        exerciseList.add(ExerciseModel("BICYCLE CLIMBER", R.drawable.exercise_4, 1))
+        exerciseList.add(ExerciseModel("LEG RAISE", R.drawable.exercise_5, 1))
+        exerciseList.add(ExerciseModel("ALTERNATIVE HEEL TOUCH", R.drawable.exercise_6, 1))
+        exerciseList.add(ExerciseModel("LEG UP CRUNCHES", R.drawable.exercise_7, 1))
+        exerciseList.add(ExerciseModel("SIT UP", R.drawable.exercise_8, 1))
+        exerciseList.add(ExerciseModel("ALTERNATIVE UPS", R.drawable.exercise_9, 1))
+        exerciseList.add(ExerciseModel("PLANK ROTATION", R.drawable.exercise_10, 1))
+        exerciseList.add(ExerciseModel("PLANK WITH LEG LEFT", R.drawable.exercise_11, 1))
+        exerciseList.add(ExerciseModel("RUSSINA TWIST", R.drawable.exercise_12, 1))
+        exerciseList.add(ExerciseModel("BRIDGE", R.drawable.exercise_13, 1))
+        exerciseList.add(ExerciseModel("VERTICAL LEG CRUNCHES", R.drawable.exercise_14, 1))
+        exerciseList.add(ExerciseModel("WIND MILL", R.drawable.exercise_15, 1))
     }
 
     private fun setRecyclerView() {
@@ -42,7 +43,7 @@ class BeforeAgeActivity : AppCompatActivity(), ClickListener {
         binding.beforeAgeRecyclerView.adapter = exerciseAdapter
     }
 
-    override fun onClick(model: Model, position: Int) {
+    override fun onClick(model: ExerciseModel, position: Int) {
 //        Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, ExerciseActivity::class.java)
         intent.putExtra("exerciseName", model.exerciseName)

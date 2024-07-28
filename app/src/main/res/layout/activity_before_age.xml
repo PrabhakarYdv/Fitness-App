@@ -7,6 +7,17 @@
     android:orientation="vertical"
     tools:context=".BeforeAgeActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#072333"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Fitness App"
+        app:titleTextColor="#FFFFFF" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/beforeAgeRecyclerView"
         android:layout_width="match_parent"
