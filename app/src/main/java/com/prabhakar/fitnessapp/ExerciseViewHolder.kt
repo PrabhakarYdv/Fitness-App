@@ -11,8 +11,8 @@ class ExerciseViewHolder(
     fun setData(model: Model) {
         binding.apply {
             exerciseName.text = model.exerciseName
-            duration.text = "0${model.duration}:00 MIN"
-            exerciseImage.setImageResource(model.exerciseImages)
+            duration.text = "0${model.exerciseDuration}:00 MIN"
+            exerciseImage.setImageResource(model.exerciseImage)
 
             exerciseLayout.setOnClickListener {
                 clickListener.onClick(model, adapterPosition)

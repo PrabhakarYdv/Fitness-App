@@ -1,7 +1,7 @@
 package com.prabhakar.fitnessapp
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.prabhakar.fitnessapp.databinding.ActivityBeforeAgeBinding
@@ -43,7 +43,12 @@ class BeforeAgeActivity : AppCompatActivity(), ClickListener {
     }
 
     override fun onClick(model: Model, position: Int) {
-        Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show()
+//        Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show()
+        val intent = Intent(this, ExerciseActivity::class.java)
+        intent.putExtra("exerciseName", model.exerciseName)
+        intent.putExtra("exerciseImage", model.exerciseImage)
+        intent.putExtra("exerciseDuration", model.exerciseDuration)
+        startActivity(intent)
     }
 
 }
