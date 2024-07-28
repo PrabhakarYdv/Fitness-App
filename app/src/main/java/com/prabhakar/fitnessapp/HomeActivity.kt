@@ -6,7 +6,9 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.MobileAds
 import com.prabhakar.fitnessapp.databinding.ActivityHomeBinding
 
@@ -40,9 +42,22 @@ class HomeActivity : AppCompatActivity() {
             }
         }
 
-        MobileAds.initialize(this)
+        MobileAds.initialize(this) {
+
+        }
         val adRequest = AdRequest.Builder().build()
         binding.bannerAdView.loadAd(adRequest)
+        binding.bannerAdView.adListener = object : AdListener() {
+            override fun onAdLoaded() {
+                Toast.makeText(this@HomeActivity, "Ad Loaded", Toast.LENGTH_LONG)
+            }
+
+            override fun onAdFailedToLoad(error: LoadAdError) {
+                Toast.makeText(this@HomeActivity, "${error.message}", Toast.LENGTH_LONG)
+
+            }
+
+        }
 
     }
 
