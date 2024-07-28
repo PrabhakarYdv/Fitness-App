@@ -18,6 +18,12 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:title="Fitness App"
         app:titleTextColor="#FFFFFF" />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/bannerAdView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        app:adUnitId="@string/banner_add_unit_id" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -271,8 +277,13 @@
 
             </androidx.cardview.widget.CardView>
 
+
+
+
+
         </LinearLayout>
 
     </ScrollView>
+
 
 </LinearLayout>

@@ -4,7 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import com.prabhakar.fitnessapp.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
@@ -37,6 +40,10 @@ class HomeActivity : AppCompatActivity() {
             }
         }
 
+        MobileAds.initialize(this)
+        val adRequest = AdRequest.Builder().build()
+        binding.bannerAdView.loadAd(adRequest)
+
     }
 
     private fun beforeAge18() {
@@ -60,15 +67,19 @@ class HomeActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val menuId = item.itemId
         if (menuId == R.id.privacy) {
+            Toast.makeText(this, "Coming Soon...!!", Toast.LENGTH_SHORT).show()
             return true
         }
         if (menuId == R.id.tc) {
+            Toast.makeText(this, "Coming Soon...!!", Toast.LENGTH_SHORT).show()
             return true
         }
         if (menuId == R.id.share) {
+            Toast.makeText(this, "Coming Soon...!!", Toast.LENGTH_SHORT).show()
             return true
         }
         if (menuId == R.id.rate) {
+            Toast.makeText(this, "Coming Soon...!!", Toast.LENGTH_SHORT).show()
             return true
         }
         return true

@@ -18,6 +18,7 @@ class FoodActivity : AppCompatActivity() {
             finish()
         }
         buildList()
+        setRecyclerView()
     }
 
     private fun buildList() {
