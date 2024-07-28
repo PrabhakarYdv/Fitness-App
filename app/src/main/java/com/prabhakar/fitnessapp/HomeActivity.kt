@@ -2,6 +2,8 @@ package com.prabhakar.fitnessapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.prabhakar.fitnessapp.databinding.ActivityHomeBinding
 
@@ -48,5 +50,27 @@ class HomeActivity : AppCompatActivity() {
 
     private fun goToFood() {
         startActivity(Intent(this, FoodActivity::class.java))
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val menuId = item.itemId
+        if (menuId == R.id.privacy) {
+            return true
+        }
+        if (menuId == R.id.tc) {
+            return true
+        }
+        if (menuId == R.id.share) {
+            return true
+        }
+        if (menuId == R.id.rate) {
+            return true
+        }
+        return true
     }
 }
