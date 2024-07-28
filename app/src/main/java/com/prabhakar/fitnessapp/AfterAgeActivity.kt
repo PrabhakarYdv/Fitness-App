@@ -15,6 +15,8 @@ class AfterAgeActivity : AppCompatActivity(), ClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityAfterAgeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        buildList()
+        setRecyclerView()
     }
 
     private fun buildList() {
