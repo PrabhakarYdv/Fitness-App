@@ -39,7 +39,7 @@
                         android:padding="5dp"
                         android:text="Exercise Name"
                         android:textColor="#000000"
-                        android:textSize="20dp"
+                        android:textSize="15dp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -50,7 +50,7 @@
                         android:padding="5dp"
                         android:text="Repeat 2 Time"
                         android:textColor="#595555"
-                        android:textSize="15dp"
+                        android:textSize="10dp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -61,22 +61,22 @@
                         android:padding="5dp"
                         android:text="01:00 MIN"
                         android:textColor="#FF5722"
-                        android:textSize="15dp"
+                        android:textSize="10dp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
 
                 <pl.droidsonroids.gif.GifImageView
                     android:id="@+id/exercise_image"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:src="@drawable/exersice_1" />
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center_vertical|end"
                     android:layout_weight="0.5"
                     android:src="@drawable/right_arrow" />
