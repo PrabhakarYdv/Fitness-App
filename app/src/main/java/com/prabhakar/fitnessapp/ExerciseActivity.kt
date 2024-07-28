@@ -10,8 +10,14 @@ class ExerciseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityExerciseBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val exerciseName = intent.getStringExtra("exerciseName")
-        val exerciseImage = intent.getIntExtra("exerciseImage", 0)
-        val exerciseDuration = intent.getIntExtra("exerciseDuration", R.drawable.exercise_1)
+        val name = intent.getStringExtra("exerciseName")
+        val image = intent.getIntExtra("exerciseImage", 0)
+        val duration = intent.getIntExtra("exerciseDuration", R.drawable.exercise_1)
+        binding.apply {
+            exerciseName.text = name
+            exerciseImage.setImageResource(image)
+            timer.text="0${duration}:00"
+        }
     }
+
 }
