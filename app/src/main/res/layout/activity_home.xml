@@ -278,7 +278,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 app:adSize="BANNER"
-                app:adUnitId="@string/banner_add_unit_id" />
+                app:adUnitId="@string/banner_ad_unit_id" />
         </LinearLayout>
 
     </ScrollView>

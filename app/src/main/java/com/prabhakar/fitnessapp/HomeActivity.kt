@@ -43,8 +43,9 @@ class HomeActivity : AppCompatActivity() {
         }
 
         MobileAds.initialize(this) {}
-        val adRequest =AdRequest.Builder().build()
+        val adRequest = AdRequest.Builder().build()
         binding.bannerAdView.loadAd(adRequest)
+
         binding.bannerAdView.adListener = object : AdListener() {
             override fun onAdLoaded() {
                 Toast.makeText(this@HomeActivity, "Ad Loaded", Toast.LENGTH_LONG)

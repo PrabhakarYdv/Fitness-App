@@ -21,21 +21,21 @@ class AfterAgeActivity : AppCompatActivity(), ClickListener {
     }
 
     private fun buildList() {
-        exerciseList.add(ExerciseModel("MOUNTAIN CLIMBER", R.drawable.exercise_1, 1))
-        exerciseList.add(ExerciseModel("BASIC CRUNCHES", R.drawable.exercise_2, 1))
-        exerciseList.add(ExerciseModel("BENCH DIPS", R.drawable.exercise_3, 1))
-        exerciseList.add(ExerciseModel("BICYCLE CLIMBER", R.drawable.exercise_4, 1))
-        exerciseList.add(ExerciseModel("LEG RAISE", R.drawable.exercise_5, 1))
-        exerciseList.add(ExerciseModel("ALTERNATIVE HEEL TOUCH", R.drawable.exercise_6, 1))
-        exerciseList.add(ExerciseModel("LEG UP CRUNCHES", R.drawable.exercise_7, 1))
-        exerciseList.add(ExerciseModel("SIT UP", R.drawable.exercise_8, 1))
-        exerciseList.add(ExerciseModel("ALTERNATIVE UPS", R.drawable.exercise_9, 1))
-        exerciseList.add(ExerciseModel("PLANK ROTATION", R.drawable.exercise_10, 1))
-        exerciseList.add(ExerciseModel("PLANK WITH LEG LEFT", R.drawable.exercise_11, 1))
-        exerciseList.add(ExerciseModel("RUSSINA TWIST", R.drawable.exercise_12, 1))
-        exerciseList.add(ExerciseModel("BRIDGE", R.drawable.exercise_13, 1))
-        exerciseList.add(ExerciseModel("VERTICAL LEG CRUNCHES", R.drawable.exercise_14, 1))
-        exerciseList.add(ExerciseModel("WIND MILL", R.drawable.exercise_15, 1))
+        exerciseList.add(ExerciseModel("MOUNTAIN CLIMBER", R.drawable.exercise_1, 2))
+        exerciseList.add(ExerciseModel("BASIC CRUNCHES", R.drawable.exercise_2, 2))
+        exerciseList.add(ExerciseModel("BENCH DIPS", R.drawable.exercise_3, 2))
+        exerciseList.add(ExerciseModel("BICYCLE CLIMBER", R.drawable.exercise_4, 2))
+        exerciseList.add(ExerciseModel("LEG RAISE", R.drawable.exercise_5, 2))
+        exerciseList.add(ExerciseModel("ALTERNATIVE HEEL TOUCH", R.drawable.exercise_6, 2))
+        exerciseList.add(ExerciseModel("LEG UP CRUNCHES", R.drawable.exercise_7, 2))
+        exerciseList.add(ExerciseModel("SIT UP", R.drawable.exercise_8, 2))
+        exerciseList.add(ExerciseModel("ALTERNATIVE UPS", R.drawable.exercise_9, 2))
+        exerciseList.add(ExerciseModel("PLANK ROTATION", R.drawable.exercise_10, 2))
+        exerciseList.add(ExerciseModel("PLANK WITH LEG LEFT", R.drawable.exercise_11, 2))
+        exerciseList.add(ExerciseModel("RUSSINA TWIST", R.drawable.exercise_12, 2))
+        exerciseList.add(ExerciseModel("BRIDGE", R.drawable.exercise_13, 2))
+        exerciseList.add(ExerciseModel("VERTICAL LEG CRUNCHES", R.drawable.exercise_14, 2))
+        exerciseList.add(ExerciseModel("WIND MILL", R.drawable.exercise_15, 2))
     }
 
     private fun setRecyclerView() {
