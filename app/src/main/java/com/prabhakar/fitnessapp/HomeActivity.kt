@@ -41,22 +41,22 @@ class HomeActivity : AppCompatActivity() {
                 goToFood()
             }
         }
-//
-//        MobileAds.initialize(this) {}
-//        val adRequest = AdRequest.Builder().build()
-//        binding.bannerAdView.loadAd(adRequest)
-//
-//        binding.bannerAdView.adListener = object : AdListener() {
-//            override fun onAdLoaded() {
-//                Toast.makeText(this@HomeActivity, "Ad Loaded", Toast.LENGTH_LONG)
-//            }
-//
-//            override fun onAdFailedToLoad(error: LoadAdError) {
-//                Toast.makeText(this@HomeActivity, "${error.message}", Toast.LENGTH_LONG)
-//
-//            }
-//
-//        }
+
+        MobileAds.initialize(this) {}
+        val adRequest = AdRequest.Builder().build()
+        binding.bannerAdView.loadAd(adRequest)
+
+        binding.bannerAdView.adListener = object : AdListener() {
+            override fun onAdLoaded() {
+                Toast.makeText(this@HomeActivity, "Ad Loaded", Toast.LENGTH_LONG)
+            }
+
+            override fun onAdFailedToLoad(error: LoadAdError) {
+                Toast.makeText(this@HomeActivity, "${error.message}", Toast.LENGTH_LONG)
+
+            }
+
+        }
 
     }
 
