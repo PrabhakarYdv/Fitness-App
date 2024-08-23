@@ -17,8 +17,8 @@ The Fitness App helps you with your Daily workout and diet with some tips. In Th
      <td>Home Screen</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/PrabhakarYdv/Fitness-App/blob/master/Output/Splash%20Screen.png" width="300"/></td>
-    <td><img src="https://github.com/PrabhakarYdv/Fitness-App/blob/master/Output/Home%20Screen.png"widht="300"></td>
+    <td><img src="https://github.com/PrabhakarYdv/Fitness-App/blob/master/Output/Splash%20Screen.png" width="300" /></td>
+    <td><img src="https://github.com/PrabhakarYdv/Fitness-App/blob/master/Output/Home%20Screen.png" widht="300" /></td>
   </tr>
  </table>
  
