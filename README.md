@@ -2,7 +2,7 @@
 The Fitness App helps you with your Daily workout and diet with some tips. In This app, Workouts are well organized so that it's easy for your daily exercises.
 
 
-//# [Download App from PlayStore](https://play.google.com/store/apps/details?id=app.prabhakar.todotaskmanager)
+# [Download App from PlayStore](#)
 
 # Tech Stack ✨
 
