@@ -61,12 +61,15 @@ androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
 
 //  Gif ImageView
+
     implementation("pl.droidsonroids.gif:android-gif-drawable:1.2.29")
 
 //  Material Design
+
     implementation("com.google.android.material:material:1.12.0")
 
 //  AdMob
+
     implementation("com.google.android.gms:play-services-ads:23.2.0")
 
 
