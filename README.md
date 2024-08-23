@@ -22,6 +22,17 @@ The Fitness App helps you with your Daily workout and diet with some tips. In Th
   </tr>
  </table>
  
+ <table>
+  <tr>
+    <td>Exercise Screen</td>
+     <td>Workout Screen</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/PrabhakarYdv/Fitness-App/blob/master/Output/Exercise%20Screen.png" width="300" height="500"/></td>
+    <td><img src="https://github.com/PrabhakarYdv/Fitness-App/blob/master/Output/Workout%20Screen.png" widht="300" height="500"/></td>
+  </tr>
+ </table>
+ 
  # Dependencies 
 
 implementation("androidx.core:core-ktx:1.10.1")
