@@ -1,4 +1,5 @@
-# Fitness App
+# Fitness App ![image](https://github.com/user-attachments/assets/11814ce3-4dc2-4f7f-ac45-6c6cbbe26319)
+
 The Fitness App helps you with your Daily workout and diet with some tips. In This app, Workouts are well organized so that it's easy for your daily exercises.
 
 
