@@ -32,6 +32,15 @@ The Fitness App helps you with your Daily workout and diet with some tips. In Th
     <td><img src="https://github.com/PrabhakarYdv/Fitness-App/blob/master/Output/Workout%20Screen.png" widht="300" height="500"/></td>
   </tr>
  </table>
+
+ <table>
+  <tr>
+    <td>Tips & Diet Screen</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/PrabhakarYdv/Fitness-App/blob/master/Output/Tips%20%26%20Diet%20Screen.png" width="300" height="500"/></td>
+  </tr>
+ </table>
  
  # Dependencies 
 
