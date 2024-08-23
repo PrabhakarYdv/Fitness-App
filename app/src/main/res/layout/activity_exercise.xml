@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".ExerciseActivity">
+
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolBar"
@@ -18,50 +19,65 @@
         app:title="Fitness App"
         app:titleTextColor="#FFFFFF" />
 
-    <TextView
-        android:id="@+id/exercise_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:paddingHorizontal="20dp"
-        android:text="Exercise Name"
-        android:textColor="#000000"
-        android:textSize="25dp"
-        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
 
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/exercise_image"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:src="@drawable/exercise_1" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/timer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginVertical="10dp"
-        android:background="@drawable/timer_bg"
-        android:padding="40dp"
-        android:text="01:00"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        android:textStyle="bold" />
+            <TextView
+                android:id="@+id/exercise_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="20dp"
+                android:text="Exercise Name"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/start_btn_bg"
-        android:paddingHorizontal="50dp"
-        android:paddingVertical="20dp"
-        android:text="START"
-        android:textColor="#FFFFFF"
-        android:textSize="25dp"
-        android:textStyle="bold" />
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/exercise_image"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:src="@drawable/exercise_1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/timer_bg"
+                android:padding="40dp"
+                android:text="01:00"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/start_btn_bg"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="20dp"
+                android:text="START"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </LinearLayout>
