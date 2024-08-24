@@ -2,4 +2,5 @@
     <string name="app_name">Fitness App</string>
     <string name="app_id">ca-app-pub-6658643932254331~5762133265</string>
     <string name="banner_ad_unit_id">ca-app-pub-6658643932254331/9616682018</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-6658643932254331/1013740013</string>
 </resources>

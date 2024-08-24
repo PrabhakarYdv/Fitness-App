@@ -1,8 +1,16 @@
 package com.prabhakar.fitnessapp
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.ads.AdError
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.FullScreenContentCallback
+import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.prabhakar.fitnessapp.databinding.ActivityExerciseBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -15,6 +23,7 @@ class ExerciseActivity : AppCompatActivity() {
     private var name: String? = null
     private var image: Int = 0
     private var duration = 0
+    private var interstitialAd: InterstitialAd? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,8 +32,13 @@ class ExerciseActivity : AppCompatActivity() {
         name = intent.getStringExtra("exerciseName")
         image = intent.getIntExtra("exerciseImage", 0)
         duration = intent.getIntExtra("exerciseDuration", R.drawable.exercise_1)
+
+        MobileAds.initialize(this)
+        showInterstitialAd()
+
         binding.apply {
             setSupportActionBar(toolBar)
+
 
             exerciseName.text = name
             exerciseImage.setImageResource(image)
@@ -58,6 +72,47 @@ class ExerciseActivity : AppCompatActivity() {
             }
 
         }
+
+    }
+
+    private fun showInterstitialAd() {
+        val adRequest = AdRequest.Builder().build()
+
+        InterstitialAd.load(
+            this@ExerciseActivity,
+            getString(R.string.interstitial_ad_unit_id),
+            adRequest,
+            object : InterstitialAdLoadCallback() {
+
+                override fun onAdLoaded(ad: InterstitialAd) {
+                    interstitialAd = ad
+                    interstitialAd?.show(this@ExerciseActivity)
+                    interstitialAd?.fullScreenContentCallback =
+                        object : FullScreenContentCallback() {
+
+                            override fun onAdDismissedFullScreenContent() {
+
+                            }
+
+                            override fun onAdFailedToShowFullScreenContent(error: AdError) {
+                                super.onAdFailedToShowFullScreenContent(error)
+                                Log.d("ad", error.toString())
+                            }
+
+                            override fun onAdShowedFullScreenContent() {
+                                interstitialAd = null
+                            }
+
+                            override fun onAdImpression() {
+                                super.onAdImpression()
+                            }
+                        }
+                }
+
+                override fun onAdFailedToLoad(p0: LoadAdError) {
+                    interstitialAd = null
+                }
+            })
 
     }
 
