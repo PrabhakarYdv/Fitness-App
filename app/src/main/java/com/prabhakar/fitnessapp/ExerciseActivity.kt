@@ -59,7 +59,7 @@ class ExerciseActivity : AppCompatActivity() {
             val tillSecond = 0
             for (second in totalSeconds downTo tillSecond) {
                 if (second == 0.toLong()) {
-                    finish()
+                    showInterstitialAd()
                 }
                 val time = String.format(
                     "%02d:%02d",
@@ -91,7 +91,7 @@ class ExerciseActivity : AppCompatActivity() {
                         object : FullScreenContentCallback() {
 
                             override fun onAdDismissedFullScreenContent() {
-
+                                this@ExerciseActivity.finish()
                             }
 
                             override fun onAdFailedToShowFullScreenContent(error: AdError) {
