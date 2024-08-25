@@ -3,7 +3,7 @@
 The Fitness App helps you with your Daily workout and diet with some tips. In This app, Workouts are well organized so that it's easy for your daily exercises.
 
 
-# [Download App from PlayStore](#)
+<a href="#" title="Playstore" target="_blank"><img height="150" width="300" src="https://data.ibtimes.sg/en/full/12247/google-play-store-8-1-73-apk.png"></a>
 
 # Tech Stack ✨
 
